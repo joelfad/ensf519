@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+    anaconda_jupyter:
+        build:
+            context: .
+        image: anaconda_jupyter
+        ports:
+            - 8888:8888
+        volumes:
+            - ./notebooks:/opt/notebooks
